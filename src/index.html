@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<link rel="manifest" href="manifest.webmanifest">
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+		<meta name="theme-color" content="#FFE1D4"/>
+		<meta http-equiv="Cache-control" content="public" max-age="2592000">
+<meta charset="utf-8">
+<title>Display Webcam Stream</title>
+ 
+<style>
+#container {
+	margin: 0px auto;
+	width: 90%;
+	height: 100%;
+	border: 1px #333 solid;
+}
+#videoElement {
+	width: 100% ;
+	height:auto;
+	display: block;
+	background-color: #ffffff;
+}
+</style>
+
+<meta name="viewport" content="width=device-width">
+	
+
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+	<script src="js/app_ini.js"></script>
+	<script src="./sw-toolbox/companion.js" data-service-worker="./sw.js"></script>
+	<script src="js/app_webcam.js"></script>
+	<script src="js/app_main.js"></script>
+</head>
+ 
+<body>
+	<div id="webcam-controls">
+		<select id="webcam-selecter"></select>
+	</div>
+	
+<div id="container">
+	<video autoplay="true" id="videoElement">
+	
+	</video>
+</div>
+
+
+
+
+</body>
+</html>

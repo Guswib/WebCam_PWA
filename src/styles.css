@@ -1,0 +1,279 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: #f8f8f8;
+  font-family: "helvetica neue", helvetica, sans-serif;
+  font-size: 17px;
+  overflow: hidden;
+}
+
+label {
+  display: block;
+  padding: 3px;
+  padding-left: 10px;
+  border-bottom: none 1px #ddd;
+  border-right: none 1px #ddd;
+
+}
+
+.left_bar_label {
+  border-bottom: solid 1px #234;
+}
+
+label {
+  color: #999;
+}
+table,tr {
+  border: 1px none black;
+  
+}
+
+td {vertical-align:middle;}
+
+.tb_left {width:120px;}
+.tb_middle {width:120px;}
+.tb_unit {text-align: left; border-left: 10px solid transparent;}
+.td_tech_name{ text-align: left;border-bottom: 20px solid transparent; height:70px;}
+.td_tech_start{ text-align: center;border-bottom: 20px solid transparent;}
+
+.input_hide {width:1px; height: 1px;display: none;}
+
+
+
+
+button {
+  width: 120px;
+font-size: 30px;
+text-align: left; 
+  line-height: 30px;
+}
+
+.button_plot{width: 60px;
+  text-align: center; 
+}
+
+.button_div_img{
+  display: inline;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  float:left;
+  height: 30px;
+}
+
+.button_txt{
+  display: block;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width:100%;
+  text-align: center;
+}
+
+.button_img{height: 30px;
+    }
+button > img,
+button > span {
+  vertical-align: middle;
+}
+
+input {
+  width: 120px;
+font-size: 30px;
+}
+
+
+
+.debug_serial{
+  display: none;
+}
+.column {
+  float: left;
+  width: 33%;
+  padding: 10px;
+  border-right: solid 1px #ddd;
+}
+/* Clear floats after the columns */
+.row {
+  
+  display: flex;
+}
+#exButtons {
+ position: absolute;
+  left: 300px;
+  top: 0px;
+}
+#Abort_EXE {font-size: 30px;width: 150px;height: 40px;}
+#copy,#button_save {font-size: 30px;width: 150px;height: 40px;}
+#Serial_Connect_button{font-size: 30px;width: 150px;height: 40px;}
+
+#hide_CellSW,#hide_button1 {width:1px; height: 1px;display: none;}
+
+#CellSW,#i_range,#pot_ctrl_mode,#sel_ECtech,#Set_EXE,#Ramp_EXE,#Step_EXE, .TechEXE_button
+{font-size: 25px;width: 130px;height: 45px;}
+
+#sel_Steps_nr{font-size: 25px;width: 60px;height: 45px;}
+
+
+#sel_ECtech{width: 130px;}
+#port-picker,
+#status {
+  color: #000;
+}
+
+#port-picker {
+  max-width: 250px;
+  margin-right: 10px;
+}
+
+#position-input {
+  display: block;
+   -webkit-appearance:none !important;
+  width: 30%;
+  margin: 20px auto;
+  height: 8px;
+  background: rgb(13, 168, 97);
+}
+
+#position-input::-webkit-slider-thumb {
+  -webkit-appearance:none !important;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background: rgb(67, 135, 253);
+}
+
+
+
+
+
+#container {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 300px;
+}
+
+#topbar{
+	position: absolute;  
+	top: 0px;
+  	left: 0px;
+  width:100%;
+  height:100px;
+}
+
+#PotVals{
+	position: absolute;  
+	width: 200px;
+  	
+}
+
+#left_bar{
+	position: absolute;  
+	top: 60px;
+  	left: 0px;
+  	width: 320px;
+}
+
+
+
+#graph_axis,#graph_label {
+	position: absolute;  
+	top: 100px;
+  	left: 400px;
+  	
+	
+}
+#graph_data{
+	position: absolute;  
+	top: 240px;
+  	left: 560px;
+  	
+	background: rgb(255, 255, 255);
+}
+
+.gui_Select_tech_button{width: 60px;display:none;}
+
+#logo_button{
+  width: 273px;
+  height: 60px;
+  background-image: url(Nordic-Electrochemistry-Logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  border: none;
+  background-color: #f8f8f8;
+  outline:0 none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#gui_not_supported_button{
+  font-size: 20px;width: 200px;height: 40px;
+}
+
+#gui_not_supported {
+  position: absolute;
+  left: 400px;
+  top:  100px;
+  width: 60%;
+  height: 600px;
+  display: none;
+  border: solid 5px #ddd;
+}
+
+#logo,#logo2 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-image: url(Nordic-Electrochemistry-Logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 300px;
+  height: 100px;
+  -webkit-transition: all .2s linear;
+  transition: all 0.2s linear;
+}
+
+
+
+
+
+#gui_ramp,#gui_step,#gui_sq {
+	display:none;
+}
+
+#receive_textarea,#rawdata {
+	height: 150px;
+	width: 300px;
+resize: none;
+}
+
+#copy_textarea_hide{	display: none; height: 150px;
+	width: 300px;
+resize: none;}
+
+#BLE_Connect_button{display: none;}
+
+.potI-led {
+  display: inline-block;
+  margin: 0 auto;
+  width: 14px;
+  height: 14px;
+  background-color: #cccccc;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 4px 1px, inset rgb(6, 48, 0) 0 -1px 5px;
+}
+.potE-led {
+  display: inline-block;
+  margin: 1 auto;
+  width: 14px;
+  height: 14px;
+  background-color: #cccccc;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 4px 1px, inset rgb(6, 48, 0) 0 -1px 5px;
+}
