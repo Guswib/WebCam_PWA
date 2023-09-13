@@ -11,7 +11,7 @@
 	"version":"0.1.2",
 	"manifest_version":2,
 	"prefer_related_applications":false,
-	"description":"Capture data from serial potentiostats ",
+	"description":"Display stream from webcam",
 	"categories":["education"],
 	"icons":[
 		{

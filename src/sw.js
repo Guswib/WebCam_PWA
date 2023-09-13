@@ -5,7 +5,7 @@ var file_cashe = [
     './pages/not_supported.html',
     './styles.css', 
     './css/modal.css', //Add any other assets your web page needs
-    './main.js',
+    './js/app_main.js',
     './js/app_webcam.js',
     './js/app_ini.js'
    
