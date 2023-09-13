@@ -65,11 +65,7 @@ toolbox.precache([
 self.addEventListener('install', function(event) {
     
     self.skipWaiting();
-  /*  event.waitUntil(
-        caches.open('EC4_basic_v1').then(function(cache) {
-            return cache.addAll(file_cashe);
-        })
-    );*/
+
 
     
 
