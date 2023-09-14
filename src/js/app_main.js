@@ -4,11 +4,11 @@ var dropdown_webCamSelect;
 var selectedValue = -1;
 
 
-function change_webcam()
+function change_webcam_event()
 {
-selectedValue = dropdown_webCamSelect.options[dropdown_webCamSelect.selectedIndex].value;
-alert(selectedValue);
-start_video2(selectedValue);
+    selectedValue = dropdown_webCamSelect.options[dropdown_webCamSelect.selectedIndex].value;
+    //alert(selectedValue);
+    start_video2(selectedValue);
 
 }
 
@@ -16,7 +16,7 @@ start_video2(selectedValue);
 onload = function() {
 
     dropdown_webCamSelect = document.getElementById("webcam-selecter");
-    document.getElementById("webcam-selecter").onchange        = function () { change_webcam("") };
+    document.getElementById("webcam-selecter").onchange        = function () { change_webcam_event("") };
 
 }
 

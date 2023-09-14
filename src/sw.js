@@ -1,10 +1,10 @@
+
+
 var file_cashe = [
-    '/',
+//    '/',
     './manifest.webmanifest',
-    './index.html',
-    './pages/not_supported.html',
-    './styles.css', 
-    './css/modal.css', //Add any other assets your web page needs
+    './index.html', 
+    './css/styles.css', //Add any other assets your web page needs
     './js/app_main.js',
     './js/app_webcam.js',
     './js/app_ini.js'

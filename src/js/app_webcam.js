@@ -1,15 +1,23 @@
-
+console.log("Running app_webcam.js");
 
 //find all webcames
 
-
+let permission=0;
 
 
 navigator.mediaDevices.enumerateDevices().then(function (devices) {
+  var cameras=0;
+  
     var option1 = document.createElement('option');
             option1.value = -1;
             option1.text = "none";
             document.querySelector('select#webcam-selecter').appendChild(option1);
+
+    navigator.permissions.query({ name: "camera" }).then(res => {
+              if(res.state == "granted"){
+                console.log("Permission is granted");
+              }else {console.log("Permission is not granted");}
+          });
     for(var i = 0; i < devices.length; i ++){
         var device = devices[i];
         if (device.kind === 'videoinput') {
@@ -17,11 +25,24 @@ navigator.mediaDevices.enumerateDevices().then(function (devices) {
             option.value = device.deviceId;
             option.text = device.label || 'camera ' + (i + 1);
             document.querySelector('select#webcam-selecter').appendChild(option);
+            cameras=cameras+1;
         }
     };
+    console.log("Finding cameras:"+ cameras); 
 });
 
 //find all webcames
+
+function Check_videoPermission()
+{
+  let permission=0;
+  navigator.permissions.query({ name: "camera" }).then(res => {
+    if(res.state == "granted"){
+      console.log("Permission is granted");
+    }else {console.log("Permission is not granted");}
+  });
+
+}
 
 function start_video(deviceId_selected)
 {
@@ -73,7 +94,7 @@ async function start_video2(deviceId)
        video.srcObject = stream;
        console.log('new stream.');
       } else {
-        console.error('Unable to find Reincubate Camo video input device.');
+        console.error('Unable to connect to stream.');
        
     
       }
