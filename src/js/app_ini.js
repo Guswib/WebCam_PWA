@@ -10,3 +10,6 @@ if(window.location.href.startsWith('http://127.0.0.1')){
         console.log("not https, redirecting");
         location.replace(window.location.href.replace("http:", "https:")); } 
 }
+
+
+  

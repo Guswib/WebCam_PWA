@@ -5,6 +5,15 @@ console.log("Running app_webcam.js");
 let permission=0;
 
 
+
+const permissionDescriptors = [
+  {name: 'camera'},
+  {name: 'microphone'},
+];
+
+
+
+
 navigator.mediaDevices.enumerateDevices().then(function (devices) {
   var cameras=0;
   
