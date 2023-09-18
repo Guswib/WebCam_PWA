@@ -32,10 +32,10 @@ var bilder_cashe = [
     './bild/img_dialog_no.svg'];
 
 var icons_cashe = [
-    './favicon.ico',
+    './bild_ico/EC4_WebCam.svg',
     'Nordic-Electrochemistry-Logo.png',
-    './bild_ico/EC4_basic_144_mask.png',
-    './bild_ico/EC4_basic_144.png'];
+    './bild_ico/EC4_WebCam_144_mask.png',
+    './bild_ico/EC4_WebCam_144.png'];
 
 
 importScripts('./sw-toolbox/sw-toolbox.js');
@@ -51,13 +51,13 @@ toolbox.precache([
   ]);
 
   toolbox.precache(file_cashe);
-  toolbox.precache(bilder_cashe);
+  //toolbox.precache(bilder_cashe);
   toolbox.precache(icons_cashe);
   
   toolbox.router.default = toolbox.networkFirst;
   toolbox.options.networkTimeoutSeconds = 5;
   
-  toolbox.router.get('bild/*', toolbox.fastest);
+  //toolbox.router.get('bild/*', toolbox.fastest);
 
 
 //install serivce worker

@@ -31,8 +31,8 @@
 <meta name="viewport" content="width=device-width">
 	
 
-	<link rel="icon" type="image/x-icon" href="favicon.ico" />
-	<link rel="icon" type="image/svg+xml" href="/bild_ico/EC4_Basic.svg" />
+	
+	<link rel="icon" type="image/svg+xml" href="./bild_ico/EC4_WebCam.svg" />
 	<script src="./sw-toolbox/companion.js" data-service-worker="./sw.js"></script>
 	
 </head>
@@ -40,8 +40,12 @@
 <body>
 	<div id="webcam-controls">
 		<select id="webcam-selecter"></select>
+		
 	</div>
-	
+	<div id="webcam-permission" style="display: none">
+		<p>The app does not have the permission to access the camera.</p>
+		<p>Select <b>App information</b> and select permit the access to the webcam.</p>
+	</div>	
 <div id="container">
 	<video autoplay="true" id="videoElement">
 	

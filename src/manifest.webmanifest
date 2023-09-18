@@ -14,68 +14,76 @@
 	"description":"Display stream from webcam",
 	"categories":["education"],
 	"icons":[
+	
 		{
-			"src":"bild_ico/EC4_basic_16.png",
+			"src": "bild_ico/EC4_WebCam.svg", 
+			"sizes": "48x48 72x72 96x96 128x128 256x256", 
+			"type": "image/svg+xml", 
+			"purpose": "any" 
+		},
+		
+		{
+			"src":"bild_ico/EC4_WebCam_16.png",
 			"type":"image/png",
 			"sizes":"16x16",
 			"purpose": "any" 
 		},
 		{
-			"src":"bild_ico/EC4_basic_48.png",
+			"src":"bild_ico/EC4_WebCam_48.png",
 			"type":"image/png",
 			"sizes":"48x48" ,
 			"purpose": "any" 
 		},
 		{
-			"src":"bild_ico/EC4_basic_48_mask.png",
+			"src":"bild_ico/EC4_WebCam_48_mask.png",
 			"type":"image/png",
 			"sizes":"48x48" ,
 			"purpose": "maskable" 
 		},
 		{
-			"src":"bild_ico/EC4_basic_128.png",
+			"src":"bild_ico/EC4_WebCam_128.png",
 			"type":"image/png",
 			"sizes":"128x128",
 			"purpose": "any" 
 		},
 		{
-			"src":"bild_ico/EC4_basic_128_mask.png",
+			"src":"bild_ico/EC4_WebCam_128_mask.png",
 			"type":"image/png",
 			"sizes":"128x128",
 			"purpose": "maskable" 
 		},
 		{
-			"src":"bild_ico/EC4_basic_144.png",
+			"src":"bild_ico/EC4_WebCam_144.png",
 			"type":"image/png",
 			"sizes":"144x144",
 			"purpose": "any" 
 		},
 		{
-			"src":"bild_ico/EC4_basic_144_mask.png",
+			"src":"bild_ico/EC4_WebCam_144_mask.png",
 			"type":"image/png",
 			"sizes":"144x144",
 			"purpose": "maskable" 
 		},
 		{
-			"src":"bild_ico/EC4_basic_256.png",
+			"src":"bild_ico/EC4_WebCam_256.png",
 			"type":"image/png", 
 			"sizes":"256x256",
 			"purpose": "any"
 		},
 		{
-			"src":"bild_ico/EC4_basic_256_mask.png",
+			"src":"bild_ico/EC4_WebCam_256_mask.png",
 			"type":"image/png", 
 			"sizes":"256x256",
 			"purpose": "maskable"
 		},
 		{
-			"src":"bild_ico/EC4_basic_512.png",
+			"src":"bild_ico/EC4_WebCam_512.png",
 			"type":"image/png", 
 			"sizes":"512x512",
 			"purpose": "any"
 		},
 		{
-			"src":"bild_ico/EC4_basic_512_mask.png",
+			"src":"bild_ico/EC4_WebCam_512_mask.png",
 			"type":"image/png", 
 			"sizes":"512x512",
 			"purpose": "maskable"

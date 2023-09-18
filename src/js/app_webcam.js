@@ -22,11 +22,14 @@ navigator.mediaDevices.enumerateDevices().then(function (devices) {
             option1.text = "none";
             document.querySelector('select#webcam-selecter').appendChild(option1);
 
-    navigator.permissions.query({ name: "camera" }).then(res => {
-              if(res.state == "granted"){
-                console.log("Permission is granted");
-              }else {console.log("Permission is not granted");}
-          });
+//    navigator.permissions.query({ name: "camera" }).then(res => {
+ //             if(res.state == "granted"){
+  //              console.log("Permission is granted");
+   //           }else {console.log("Permission is not granted");}
+    //      });
+
+    Check_videoPermission();
+
     for(var i = 0; i < devices.length; i ++){
         var device = devices[i];
         if (device.kind === 'videoinput') {
@@ -38,17 +41,25 @@ navigator.mediaDevices.enumerateDevices().then(function (devices) {
         }
     };
     console.log("Finding cameras:"+ cameras); 
+   
 });
 
 //find all webcames
 
 function Check_videoPermission()
 {
+  console.log("Check permission");
+  let text_for_permission = document.getElementById("webcam-permission");
   let permission=0;
   navigator.permissions.query({ name: "camera" }).then(res => {
     if(res.state == "granted"){
       console.log("Permission is granted");
-    }else {console.log("Permission is not granted");}
+      text_for_permission.style.display="none";
+
+    }else {
+      console.log("Permission is not granted");
+      text_for_permission.style.display="block";
+    }
   });
 
 }
@@ -82,7 +93,7 @@ async function start_video2(deviceId)
     let stream = null;
     var video = document.querySelector("#videoElement");
 
-    console.log("new " );
+    console.log("new camera src:" );
     console.log(deviceId );
     if (deviceId == -1) {
         stream = video.srcObject;
